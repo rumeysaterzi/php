@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            long[] tckimlik = new long[3];
+            tckimlik[0] = 14569874165;
+            tckimlik[1] = 78951234568;
+            tckimlik[2] = 15469874521;
+
+            for (int i = 0; i < tckimlik.Length; i++)
+                Console.WriteLine(tckimlik[i]);
+            string[] adlar =
+                new string[] { "ahmet", "ayse", "fatma", "betül" };
+            foreach (string ad in adlar)
+                Console.Write(ad + " ");
+            int []sayilar = new int[] { 12, 55, 32, 64, 84,22,44 };
+            int[] kopya = new int [sayilar.Length];
+            Console.WriteLine();
+
+            for (int i = 0; i < sayilar.Length; i++)
+                kopya[i] = sayilar[i];
+            foreach (int i in kopya)
+                Console.Write(i + " ");
+
+
+
+
+
+        }
+    }
+}
